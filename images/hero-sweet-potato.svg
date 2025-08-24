@@ -1,0 +1,157 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>つぼ焼き芋 火乃蔵の糖度16度紅はるか</title>
+  
+  <!-- 背景グラデーション -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFF9F2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FEF3E2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="potatoGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#D97706;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#B65C2A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6F3B1E;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="insideGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FED7AA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FDBA74;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="potGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#78716C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#57534E;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="4" stdDeviation="6" flood-color="rgba(107,59,30,0.2)"/>
+    </filter>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3"/>
+      <feColorMatrix values="1 0.5 0 0 0  0 0.3 0 0 0  0 0 0 0 0  0 0 0 1 0"/>
+    </filter>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="400" height="300" fill="url(#bgGradient)" rx="20"/>
+  
+  <!-- 装飾的な蒸気エフェクト -->
+  <g opacity="0.6">
+    <ellipse cx="200" cy="80" rx="8" ry="15" fill="#E5E7EB" opacity="0.3">
+      <animateTransform attributeName="transform" type="translate" values="0,0; 2,-5; -1,-8; 0,0" dur="3s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="210" cy="75" rx="6" ry="12" fill="#E5E7EB" opacity="0.2">
+      <animateTransform attributeName="transform" type="translate" values="0,0; -1,-6; 2,-9; 0,0" dur="3.5s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="190" cy="85" rx="5" ry="10" fill="#E5E7EB" opacity="0.25">
+      <animateTransform attributeName="transform" type="translate" values="0,0; 1,-4; -2,-7; 0,0" dur="2.8s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+  
+  <!-- つぼ（壺） -->
+  <g transform="translate(160, 180)">
+    <ellipse cx="40" cy="45" rx="35" ry="8" fill="url(#potGradient)" opacity="0.3"/>
+    <path d="M20 10 Q20 5 25 5 L55 5 Q60 5 60 10 L58 45 Q58 50 53 50 L27 50 Q22 50 22 45 Z" 
+          fill="url(#potGradient)" 
+          filter="url(#shadow)"/>
+    <!-- つぼの口 -->
+    <ellipse cx="40" cy="10" rx="17" ry="3" fill="#44403C"/>
+    <!-- つぼの装飾 -->
+    <path d="M25 20 Q40 15 55 20" stroke="#A8A29E" stroke-width="1" fill="none"/>
+    <path d="M25 30 Q40 25 55 30" stroke="#A8A29E" stroke-width="1" fill="none"/>
+  </g>
+  
+  <!-- メインの焼き芋 -->
+  <g transform="translate(100, 100)">
+    <!-- 焼き芋本体 -->
+    <ellipse cx="100" cy="50" rx="80" ry="25" fill="url(#potatoGradient)" filter="url(#shadow)"/>
+    
+    <!-- 焼き芋の質感（しわ） -->
+    <path d="M30 45 Q50 40 70 45 Q90 50 110 45 Q130 40 150 45 Q170 50 180 45" 
+          stroke="#92400E" stroke-width="1.5" fill="none" opacity="0.6"/>
+    <path d="M25 55 Q45 50 65 55 Q85 60 105 55 Q125 50 145 55 Q165 60 185 55" 
+          stroke="#92400E" stroke-width="1" fill="none" opacity="0.4"/>
+    
+    <!-- 割れた部分（中身が見える） -->
+    <path d="M80 35 Q90 30 100 35 Q110 40 120 35 L120 45 Q110 50 100 45 Q90 40 80 45 Z" 
+          fill="url(#insideGradient)"/>
+    
+    <!-- 蜜がたれる様子 -->
+    <ellipse cx="105" cy="47" rx="3" ry="6" fill="#F59E0B" opacity="0.8"/>
+    <ellipse cx="95" cy="48" rx="2" ry="4" fill="#F59E0B" opacity="0.6"/>
+    
+    <!-- 焼き芋の先端部分 -->
+    <ellipse cx="35" cy="50" rx="15" ry="20" fill="#92400E" opacity="0.8"/>
+    <ellipse cx="165" cy="50" rx="15" ry="20" fill="#92400E" opacity="0.8"/>
+    
+    <!-- ホクホク感を表現する細かい点 -->
+    <circle cx="70" cy="45" r="1" fill="#FED7AA"/>
+    <circle cx="85" cy="52" r="0.8" fill="#FED7AA"/>
+    <circle cx="115" cy="48" r="1.2" fill="#FED7AA"/>
+    <circle cx="130" cy="55" r="0.9" fill="#FED7AA"/>
+  </g>
+  
+  <!-- 糖度表示 -->
+  <g transform="translate(50, 50)">
+    <rect x="0" y="0" width="80" height="30" rx="15" fill="#FFFFFF" opacity="0.95" filter="url(#shadow)"/>
+    <text x="40" y="12" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#B65C2A">糖度</text>
+    <text x="40" y="22" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#D97706">16度</text>
+  </g>
+  
+  <!-- 温度計アイコン -->
+  <g transform="translate(280, 60)">
+    <rect x="8" y="5" width="4" height="25" rx="2" fill="#EF4444" opacity="0.8"/>
+    <circle cx="10" cy="32" r="6" fill="#EF4444" opacity="0.8"/>
+    <rect x="6" y="30" width="8" height="8" fill="#EF4444" opacity="0.8"/>
+    <!-- 温度目盛り -->
+    <line x1="14" y1="10" x2="18" y2="10" stroke="#6B7280" stroke-width="1"/>
+    <line x1="14" y1="15" x2="18" y2="15" stroke="#6B7280" stroke-width="1"/>
+    <line x1="14" y1="20" x2="18" y2="20" stroke="#6B7280" stroke-width="1"/>
+    <line x1="14" y1="25" x2="18" y2="25" stroke="#6B7280" stroke-width="1"/>
+  </g>
+  
+  <!-- 時計アイコン（2時間に1回） -->
+  <g transform="translate(300, 180)">
+    <circle cx="15" cy="15" r="12" fill="#FFFFFF" stroke="#B65C2A" stroke-width="2"/>
+    <circle cx="15" cy="15" r="1.5" fill="#B65C2A"/>
+    <line x1="15" y1="15" x2="15" y2="8" stroke="#B65C2A" stroke-width="2"/>
+    <line x1="15" y1="15" x2="20" y2="15" stroke="#B65C2A" stroke-width="1.5"/>
+    <text x="15" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" font-weight="bold" fill="#B65C2A">2時間に1回</text>
+  </g>
+  
+  <!-- 価格タグ -->
+  <g transform="translate(320, 120)">
+    <path d="M0 10 L10 10 L15 15 L10 20 L0 20 Q-5 15 0 10 Z" fill="#D97706" filter="url(#shadow)"/>
+    <circle cx="3" cy="15" r="2" fill="#FFFFFF"/>
+    <text x="25" y="12" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#B65C2A">486円</text>
+    <text x="25" y="20" font-family="Arial, sans-serif" font-size="6" fill="#6B7280">（税込）</text>
+  </g>
+  
+  <!-- 装飾的な葉っぱ -->
+  <g transform="translate(70, 120)">
+    <path d="M5 15 Q0 5 10 0 Q20 5 15 15 Q10 20 5 15 Z" fill="#22C55E" opacity="0.7"/>
+    <path d="M8 8 Q12 12 8 16" stroke="#16A34A" stroke-width="1" fill="none"/>
+  </g>
+  
+  <g transform="translate(250, 200)">
+    <path d="M5 15 Q0 5 10 0 Q20 5 15 15 Q10 20 5 15 Z" fill="#22C55E" opacity="0.5"/>
+    <path d="M8 8 Q12 12 8 16" stroke="#16A34A" stroke-width="1" fill="none"/>
+  </g>
+  
+  <!-- ハートマーク（愛情込めて） -->
+  <g transform="translate(60, 200)">
+    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" 
+          fill="#EF4444" opacity="0.6" transform="scale(0.6)"/>
+  </g>
+  
+  <!-- 星評価 -->
+  <g transform="translate(310, 200)">
+    <g opacity="0.8">
+      <path d="M8 1l2 6h6l-5 4 2 6-5-4-5 4 2-6-5-4h6l2-6z" fill="#F59E0B" transform="scale(0.7)"/>
+      <path d="M20 1l1.5 4.5h4.5l-3.5 3 1.5 4.5-3.5-2.5-3.5 2.5 1.5-4.5-3.5-3h4.5l1.5-4.5z" fill="#F59E0B" transform="scale(0.6)"/>
+    </g>
+  </g>
+  
+  <!-- "ねっとり"テキスト -->
+  <g transform="translate(150, 250)">
+    <text x="50" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#D97706" opacity="0.8">"ねっとり"</text>
+    <text x="50" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#B65C2A" opacity="0.6">極上の食感</text>
+  </g>
+</svg>
