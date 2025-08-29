@@ -137,12 +137,14 @@ p {
     line-height: 1.8;
 }
 
-/* Container */
+/* Container - 中央揃え修正 */
 .container {
     width: 100%;
     max-width: 1040px;
     margin: 0 auto;
     padding: 0 var(--space-4);
+    display: block;
+    text-align: left;
 }
 
 @media (min-width: 768px) {
